@@ -14,7 +14,7 @@ from telesign.messaging import MessagingClient
 #Enter the site above to register, and change 'customer_id' and 'api_key' by the value reported on the site.
 
 customer_id = "20BA4A90-30CE-483B-A467-51E36AA7E2F8"
-api_key = R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw==
+api_key = "R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw=="
 
 message_type = "MKT"
 
