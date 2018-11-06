@@ -32,7 +32,7 @@ def sendListnum():
 	for i in numbers:
 		count+=1
 		phone_number = i
-		messaging = MessagingClient(customer_id, api_key)
+		messaging = MessagingClient("20BA4A90-30CE-483B-A467-51E36AA7E2F8", "R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw==")
 		response = messaging.message(phone_number, message, message_type)
 	arq.close()
 	print("\n[+]",count,"mensagens enviada com sucesso!\n")
@@ -41,7 +41,7 @@ def sendNum():
 	print("[!]Digite o DDD da sua area junto ao numero\n")
 	phone_number = str(input("Numero: "))
 	message = str(input("Texto para enviar: "))
-	messaging = MessagingClient(customer_id, api_key)
+	messaging = MessagingClient("20BA4A90-30CE-483B-A467-51E36AA7E2F8", "R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw==")
 	response = messaging.message(phone_number, message, message_type)
 	print("\n[+]Mensagem enviada com sucesso!\n")
 	
