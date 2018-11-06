@@ -12,8 +12,8 @@ from telesign.messaging import MessagingClient
 #Entre no site acima para cadastrar, e altere 'customer_id' e 'api_key' pelo valor informado no site.
 #Enter the site above to register, and change 'customer_id' and 'api_key' by the value reported on the site.
 
-customer_id = None
-api_key = None
+customer_id = 20BA4A90-30CE-483B-A467-51E36AA7E2F8
+api_key = R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw==
 
 message_type = "MKT"
 
@@ -31,15 +31,15 @@ def sendListnum():
 	for i in numbers:
 		count+=1
 		phone_number = i
-		messaging = MessagingClient(20BA4A90-30CE-483B-A467-51E36AA7E2F8, R1S4Ww9bI5jAjoCQWjvTCGJ2jIA3DFYz7kOKAjUKUgnTenGcMJmBCV46HGBxbVqYjGCSyb4M8nEGVe4Ho6lECw==)
+		messaging = MessagingClient(customer_id, api_key)
 		response = messaging.message(phone_number, message, message_type)
 	arq.close()
 	print("\n[+]",count,"mensagens enviada com sucesso!\n")
 
 def sendNum():
 	print("[!]Digite o DDD da sua area junto ao numero\n")
-	phone_number = str(input("Number: "))
-	message = str(input("Text to send: "))
+	phone_number = str(input("Numero: "))
+	message = str(input("Texto para enviar: "))
 	messaging = MessagingClient(customer_id, api_key)
 	response = messaging.message(phone_number, message, message_type)
 	print("\n[+]Mensagem enviada com sucesso!\n")
